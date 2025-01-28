@@ -1,0 +1,25 @@
+@charset "UTF-8";
+div{
+    max-height: 1000px;
+    min-height: 200px;
+
+
+}
+div#um{
+    background-image: url(imagens/Cosmos1.jpg);
+    background-attachment: fixed;
+    background-position: left top;
+}
+
+div#dois{
+    background-color: white;
+    
+}
+
+div#tres{
+    background-image: url(imagens/ideiasistemasolar.jpg);
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: 100%;
+    
+}
