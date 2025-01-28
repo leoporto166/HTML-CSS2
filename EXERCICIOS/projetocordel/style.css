@@ -1,0 +1,93 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-size: 3vw;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+:root{
+    --font01:"Sriracha", cursive;
+    --font02: "Passion One", cursive;
+    --font03: Verdana, Geneva, Tahoma, sans-serif;
+}
+html, body{
+        min-height: 100vh;
+        font-family: var(--font03);
+}
+header{
+    background-color: black;
+    min-height: 100px;
+    font-family: var(--font01);
+}
+
+header > h1{
+    color: white;
+    text-align: center;
+    padding-top: 25px;
+    font-variant: small-caps;
+    font-size: 5vw;
+}
+
+header > p{
+    color: white;
+    text-align: center;
+    padding-bottom: 25px;
+
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+section{
+    padding-top: 10vh ;
+    padding-bottom: 10vh;
+    font-family: var(--font02);
+}
+
+section > p{
+    padding-bottom: 2em;
+}
+
+main > section.normal{
+    background-color: rgb(255, 255, 255);
+    padding-left: 30px;
+
+}
+
+main > section.imagem{
+    background-color: rgb(255, 255, 255);
+    padding-left: 30px;
+
+
+}
+
+section.imagem > p{
+    background-color: rgba(58, 58, 58, 0.514);
+    color: white;
+    display: inline-block;
+}
+
+section#imagem1{
+   background-image: url(imagens/insect-4489864_1280.jpg);
+   background-attachment: fixed;
+   background-repeat: no-repeat;
+   
+}
+
+section#imagem2{
+   background-image: url(imagens/arreglo-cartas-amor-vista-superior_23-2150716537.avif);
+   background-attachment: fixed;
+   background-repeat: no-repeat;
+}
