@@ -4,17 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercício de Tabelas</title>
+    <style>
+
+        caption{
+            background-color: rgb(197, 197, 197);
+        }
+
+        table{
+            width: 400px;
+            border-collapse: collapse;
+        }
+
+        td, th{
+            border: 1px solid black;
+        }
+
+        th{
+            background-color: rgb(59, 59, 59);
+            color: white;
+        }
+
+        tr.destaque{
+            background-color: rgb(18, 156, 156);
+        }
+
+        col.cnome{
+            background-color: aquamarine;
+        }
+
+        col.cidade{
+            background-color: gray;
+        }
+    </style>
 </head>
 <body>
     <table>
 
+        <colgroup>
+            <col class="cnome">
+            <col class="csexo">
+            <col class="cidade">
+            <col class="cprof">
+        </colgroup>
+
         <caption>Cadastro</caption>
 
         <tr>
-            <th>Nome</th>
-            <th>Sexo</th>
-            <th>Idade</th>
-            <th>Profissão</th>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
         </tr>
 
         <tr>
@@ -22,6 +61,27 @@
             <td>F</td>
             <td>25</td>
             <td>Jornalista</td>
+        </tr>
+
+        <tr class="destaque">
+            <td>Matheus</td>
+            <td>M</td>
+            <td>30</td>
+            <td>Progamador</td>
+        </tr>
+
+        <tr>
+            <td>Alice</td>
+            <td>F</td>
+            <td>20</td>
+            <td>Atriz</td>
+        </tr>
+
+        <tr>
+            <td>Marcos</td>
+            <td>M</td>
+            <td>22</td>
+            <td>Médico</td>
         </tr>
     </table>
 </body>
