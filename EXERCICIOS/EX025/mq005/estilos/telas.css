@@ -1,0 +1,71 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px) and (max-width: 1000px) {
+    span#burguer{
+        display: none;
+    }
+
+    menu{
+        display: block;
+    }
+
+    header > menu ul > li{
+        display: inline-block;
+
+    }
+
+    header > menu ul > li > a{
+        border-top: none;
+    }
+
+    main{
+        width: 768px;
+    }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1200px) {
+    span#burguer{
+        display: none;
+    }
+
+    menu{
+        display: block;
+    }
+
+    header > menu ul > li{
+        display: inline-block;
+
+    }
+
+    header > menu ul > li > a{
+        border-top: none;
+    }
+
+    main{
+        width: 768px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    span#burguer{
+        display: none;
+    }
+
+    menu{
+        display: block;
+    }
+
+    header > menu ul > li{
+        display: inline-block;
+
+    }
+
+    header > menu ul > li > a{
+        border-top: none;
+    }
+
+    main{
+        width: 768px;
+    }
+
+}

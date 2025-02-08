@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MQ</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="estilos/style.css" media="all">
+    <link rel="stylesheet" href="estilos/telas.css">
 </head>
-<body>
+<body onresize="mudouTamano()">
     <header>
         <h1>Meu Site</h1>
-
-        <menu>
+        <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+        <menu id="itens">
             <ul>
                 <li><a href="#">Opcão 1</a></li>
                 <li><a href="#">Opcão 2</a></li>
@@ -24,11 +26,27 @@
 
     <main>
         <article>
-            <h1>Testado Media Quiries</h1>
+            <h1>Testando Media Queries</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit molestiae facilis amet quis, incidunt, consectetur voluptas atque enim dolorum nihil maxime minus! Officiis dolor praesentium voluptatem quisquam pariatur sapiente suscipit.</p>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis quibusdam distinctio blanditiis debitis praesentium quidem, explicabo eaque veniam necessitatibus temporibus vero ad odio nostrum nesciunt accusantium itaque sed dolores voluptate.</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit dolore temporibus amet praesentium sapiente aut omnis est ullam expedita inventore consectetur quia quidem, numquam nam. Ea, quaerat. Tempore, repellendus molestias! Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit deserunt, velit ipsa debitis suscipit fuga vitae, doloribus magni asperiores cupiditate inventore quod recusandae ex saepe ut enim vero, atque tenetur!</p>
         </article>
     </main>
+    <script>
+        function mudouTamano () {
+            if (window,innerWidth >= 768) {
+                itens.style.display = 'block'
+            } else{
+                itens.style.display = 'none'
+            }
+        }
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
 </body>
 </html>
