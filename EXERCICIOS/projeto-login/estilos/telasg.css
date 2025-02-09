@@ -1,0 +1,78 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 1200px) {
+
+    img{
+        position: absolute;
+        width: 420px ;
+        height: 500px;
+    
+        top: 50%;
+        left: 50%;
+        transform: translate( -123%, -50%); 
+        border-radius: 0px;
+        border-bottom-left-radius: 10px;
+        border-top-left-radius: 10px;
+    }
+
+    main{
+    
+        width: 680px;
+        height: 500px;
+        top: 50%;
+        left: 50%;
+        transform: translate(  -15%, -50%);
+        border-radius: 0px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+
+    main > p{
+        text-align: center;
+    }
+
+    label#iusu{
+        display: block;
+        margin: auto;
+        margin-top: 10px;
+    }
+
+    input#iusu{
+        height: 30px;
+        border-radius: 10px;
+        width: 600px;
+        border: 1px solid rgb(68, 74, 170);
+        display: block;
+        margin: auto;
+    }
+    
+    label#isen{
+        display: block;
+        margin: auto;
+        margin-top: 10px;
+    }
+
+    input#isen{
+        height: 30px;
+        border-radius: 10px;
+        width: 600px;
+        border: 1px solid rgb(68, 74, 170);
+        display: block;
+        margin: auto;
+    }
+    
+    input#ent{
+        width: 600px;
+        height: 30px;
+        margin-top: 10px;
+    
+    }
+    
+    input#limp{
+        width: 600px;
+        height: 30px;
+        margin-top: 10px;
+    
+    }
+    
+}
