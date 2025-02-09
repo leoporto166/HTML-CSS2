@@ -2,6 +2,10 @@
 
 @media screen and (min-width: 1200px) {
 
+    html{
+        background-image: linear-gradient(to bottom #535BCE,  #6FA3E1, #A8BEEA );
+    }
+
     img{
         position: absolute;
         width: 420px ;
@@ -32,8 +36,7 @@
     }
 
     label#iusu{
-        display: block;
-        margin: auto;
+    
         margin-top: 10px;
     }
 
@@ -47,8 +50,7 @@
     }
     
     label#isen{
-        display: block;
-        margin: auto;
+    
         margin-top: 10px;
     }
 

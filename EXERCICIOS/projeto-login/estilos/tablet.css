@@ -2,6 +2,10 @@
 
 @media screen and (min-width: 768px) and (max-width: 1000px) {
 
+    html{
+        background-image: linear-gradient(to bottom #535BCE,  #6FA3E1, #A8BEEA );
+    }
+
     img{
         position: absolute;
         width: 250px ;
