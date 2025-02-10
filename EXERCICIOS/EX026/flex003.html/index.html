@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+
+    <style>
+        div#conteiner{
+            background-color: black;
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+
+        div#conteiner2{
+            background-color: black;
+            display: flex;
+            flex-direction: row-reverse;
+            flex-wrap: wrap-reverse;
+            margin-bottom: 20px;
+        }
+
+        div#conteiner3{
+            background-color: black;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        div#conteiner4{
+            background-color: black;
+            display: flex;
+            flex-direction: column-reverse;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        div#conteiner5{
+            background-color: black;
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 20px;
+            flex-wrap: wrap-reverse;
+        }
+
+        div#conteiner6{
+            background-color: black;
+            display: flex;
+            flex-direction: row-reverse;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+        
+        div.item{
+            background-color: aquamarine;
+     
+            border: 1px solid black;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="conteiner">
+        <div class="item">exempo de bloco :A</div>
+        <div class="item">exempo de bloco :B</div>
+        <div class="item">exempo de bloco :C</div>
+        <div class="item">exempo de bloco :D</div>
+        <div class="item">exempo de bloco :E</div>
+        <div class="item">exempo de bloco :F</div>
+        <div class="item">exempo de bloco :G</div>
+    </div>
+
+    <div id="conteiner5">
+        <div class="item">exempo de bloco :A</div>
+        <div class="item">exempo de bloco :B</div>
+        <div class="item">exempo de bloco :C</div>
+        <div class="item">exempo de bloco :D</div>
+        <div class="item">exempo de bloco :E</div>
+        <div class="item">exempo de bloco :F</div>
+        <div class="item">exempo de bloco :G</div>
+    </div>
+
+    <div id="conteiner2">
+        <div class="item">exempo de bloco :A</div>
+        <div class="item">exempo de bloco :B</div>
+        <div class="item">exempo de bloco :C</div>
+        <div class="item">exempo de bloco :D</div>
+        <div class="item">exempo de bloco :E</div>
+        <div class="item">exempo de bloco :F</div>
+        <div class="item">exempo de bloco :G</div>
+    </div>
+
+    <div id="conteiner6">
+        <div class="item">exempo de bloco :A</div>
+        <div class="item">exempo de bloco :B</div>
+        <div class="item">exempo de bloco :C</div>
+        <div class="item">exempo de bloco :D</div>
+        <div class="item">exempo de bloco :E</div>
+        <div class="item">exempo de bloco :F</div>
+        <div class="item">exempo de bloco :G</div>
+    </div>
+
+    <div id="conteiner3">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+
+    <div id="conteiner4">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+</body>
+</html>

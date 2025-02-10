@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+
+    <style>
+        div#conteiner{
+            background-color: black;
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 20px;
+        }
+
+        div#conteiner2{
+            background-color: black;
+            display: flex;
+            flex-direction: row-reverse;
+            margin-bottom: 20px;
+        }
+
+        div#conteiner3{
+            background-color: black;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        div#conteiner4{
+            background-color: black;
+            display: flex;
+            flex-direction: column-reverse;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        div.item{
+            background-color: aquamarine;
+            flex: auto;
+            border: 1px solid black;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="conteiner">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+
+    <div id="conteiner2">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+
+    <div id="conteiner3">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+
+    <div id="conteiner4">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+</body>
+</html>
