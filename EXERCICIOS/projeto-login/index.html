@@ -12,29 +12,35 @@
 </head>
 <body>
 <main>
-    <section id="form">
+<section id="login">
         <div id="img">
 
         </div>
         
             <h1>Login</h1>
-            <p>Seja bem-vindo(a) novamente. Faça login param acessar sua conta!</p>
+            <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta!</p>
 
     <form action="" method="post">
-        <p>
+        <div id="campo">
+            <p>
             <label for="iusu"  id="iusu" class="material-symbols-outlined">Person</label>
             <input type="text" name="usu" id="iusu" required minlength="8" maxlength="15" placeholder="nome de usuario" size="15">
-        </p>
-
-        <p>
+            </p>
+        </div>
+        <div id="campo">
+            <p>
             <label for="isen" id="isen" class="material-symbols-outlined">key</label>
             <input type="password" name="sen" id="isen" required minlength="8" placeholder="senha do usuario" size="15">
-        </p>
+            </p>
+        </div>
+
 
         <p><input type="submit" value="Entrar" id="ent"></p>
+
         <p><input type="reset" value="Limpar" id="limp"></p>
     </form>
-    </section>
+
+</section>
 </main>
 </body>
 </html>

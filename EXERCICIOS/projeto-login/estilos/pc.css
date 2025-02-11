@@ -2,66 +2,60 @@
 
 @media screen and (min-width: 992px) and (max-width:1200px) {
 
-    html{
+    main{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        justify-items: center;
         background-image: linear-gradient(to bottom #535BCE,  #6FA3E1, #A8BEEA );
     }
-    img{
-    position: absolute;
-    width: 400px ;
-    height: 300px;
 
-    top: 50%;
-    left: 50%;
-    transform: translate( 10%, -50%); 
+    section#login > div#img{
+    width: 40% ;
+    height: 100%;
+    float: left;
     border-radius:  0px;
-    border-bottom-right-radius: 10px;
-    border-top-right-radius: 10px;
-    
-}
-
-
-form{
-    background-color: white;
-}
-main{
-    
-    width: 450px;
-    height: 300px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-91%, -50%);
-    border-radius: 0px;
-    border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    background-position: center center;
+    
 }
 
 
-input#iusu{
-    height: 30px;
+section#login{
+    
+    width: 90vw;
+    height: 40vh;
+
     border-radius: 10px;
-    width: 370px;
+}
+
+
+input{
+    height: 3em;
+    border-radius: 10px;
+    width: calc(100% - 45%);
     border: 1px solid rgb(68, 74, 170);
 }
 
-
-input#isen{
-    height: 30px;
-    border-radius: 10px;
-    width: 370px;
-    border: 1px solid rgb(68, 74, 170);
-}
 
 input#ent{
-    width: 400px;
-    height: 30px;
-    margin-top: 5px;
+    width: 57%;
+    height: 4em;
+    margin-top: 2%;
 
 }
 
 input#limp{
-    width: 400px;
-    height: 30px;
+    width: 57%;
+    height: 4em;
+    margin-top: 2%;
 
 }
+
+
 
 }

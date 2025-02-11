@@ -2,60 +2,60 @@
 
 @media screen and (min-width: 768px) and (max-width: 1000px) {
 
-    html{
+    main{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        justify-items: center;
         background-image: linear-gradient(to bottom #535BCE,  #6FA3E1, #A8BEEA );
     }
 
-    img{
-        position: absolute;
-        width: 250px ;
-        height: 300px;
+    section#login > div#img{
+        width: 30%;
+        height: 100%;
+        background-image: url(../imagens/pexels-sean-whang-25006-804269.jpg);
+        background-position:  center center;
+        background-size: cover;
     
-        top: 50%;
-        left: 50%;
-        transform: translate( -150%, -50%); 
         border-radius: 0px;
-        border-bottom-left-radius: 10px;
-        border-top-left-radius: 10px;
-    }
-
-    main{
-    
-        width: 510px;
-        height: 300px;
-        top: 50%;
-        left: 50%;
-        transform: translate(  -25%, -50%);
-        border-radius: 0px;
-        border-top-right-radius: 10px;
         border-bottom-right-radius: 10px;
+        border-top-right-radius: 10px;
+        float: right;
     }
 
-    input#iusu{
-        height: 30px;
+    section#login{
+    
+        width: 90vw;
+        height: 40vw;
+        
         border-radius: 10px;
-        width: 470px;
+        float: right;
+    }
+
+    input{
+        height: 3em;
+        border-radius: 10px;
+        width: calc(100% -  45%);
         border: 1px solid rgb(68, 74, 170);
     }
     
-    
-    input#isen{
-        height: 30px;
-        border-radius: 10px;
-        width: 470px;
-        border: 1px solid rgb(68, 74, 170);
-    }
+
     
     input#ent{
-        width: 500px;
-        height: 30px;
-        margin-top: 5px;
+        width: calc(100% -  35%);
+        height: 3.5em;
+        margin-top: 2vh;
+
     
     }
     
     input#limp{
-        width: 500px;
-        height: 30px;
+        width: calc(100% -  35%);
+        height: 3.5em;
+        margin-top: 2vh;
     
     }
     

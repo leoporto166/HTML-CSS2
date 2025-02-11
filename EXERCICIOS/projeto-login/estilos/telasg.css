@@ -2,77 +2,54 @@
 
 @media screen and (min-width: 1200px) {
 
-    html{
+    mains{
         background-image: linear-gradient(to bottom #535BCE,  #6FA3E1, #A8BEEA );
     }
 
-    img{
-        position: absolute;
-        width: 420px ;
-        height: 500px;
-    
-        top: 50%;
-        left: 50%;
-        transform: translate( -123%, -50%); 
+    section#login > div#img{
+
+        width: 40%;
+        height: 100%;
+        float: left;
         border-radius: 0px;
         border-bottom-left-radius: 10px;
         border-top-left-radius: 10px;
     }
 
-    main{
+    section#login{
     
-        width: 680px;
-        height: 500px;
-        top: 50%;
-        left: 50%;
-        transform: translate(  -15%, -50%);
-        border-radius: 0px;
-        border-top-right-radius: 10px;
-        border-bottom-right-radius: 10px;
+        width: 90%;
+        height: 50%;
+        float: right;
+        border-radius: 11px;
+
     }
 
-    main > p{
+    section#login > p{
         text-align: center;
     }
 
-    label#iusu{
-    
-        margin-top: 10px;
-    }
 
-    input#iusu{
+    input{
         height: 30px;
         border-radius: 10px;
-        width: 600px;
+        width: calc(100% - 45%);
         border: 1px solid rgb(68, 74, 170);
-        display: block;
-        margin: auto;
-    }
-    
-    label#isen{
-    
-        margin-top: 10px;
-    }
+        height: 3.5em;
+        margin-top: 1%;
 
-    input#isen{
-        height: 30px;
-        border-radius: 10px;
-        width: 600px;
-        border: 1px solid rgb(68, 74, 170);
-        display: block;
-        margin: auto;
     }
     
     input#ent{
-        width: 600px;
-        height: 30px;
+        width: 58%;
+        height: 4em;
         margin-top: 10px;
     
     }
     
     input#limp{
-        width: 600px;
-        height: 30px;
+        width: 58%;
+        height: 4em;
         margin-top: 10px;
     
     }
