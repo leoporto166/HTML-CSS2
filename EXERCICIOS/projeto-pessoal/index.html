@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BMW</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 
     <link rel="stylesheet" href="estilos/style.css">
 </head>
@@ -13,64 +14,84 @@
 
             <section id="carro0">
                 <h1>BMW</h1>
-                <p>AAAAAAA</p>
-            </section>
-
-            <menu>
-                <div id="logo">
-                    
-                </div>
+                    <img src="imagens/logo.webp" alt="">
+               
+            
+            <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+            <menu id="itens">
+                <ul>
+                    <li><a href="">Descubra</a></li>
+                    <li><a href="">Historia</a></li>
+                    <li><a href="">Criador</a></li>
+                </ul>
             </menu>
+        </section>
         </header>
     <main>
 
     <section id="carro1" class="img" >
     
             <h2>E28</h2>
-            <p>Saiba Mais</p>
+            <a href="#">Saiba mais
+            
+            </a>
     
     </section>
-    <section id="2">
+    <section id="carro2"  class="img" >
     
             <h2>E34</h2>
-            <p>Saiba Mais</p>
-        <div id="carro2">
-                img
-        </div>
+            <a href="#">Saiba mais
+            
+            </a>
+        
     </section>
-    <section id="33">
+    <section id="carro3" class="img" >
     
             <h2>E39</h2>
-            <p>Saiba Mais</p>
-        <div id="carro3">
-                img
-        </div>
+            <a href="#">Saiba mais
+            
+            </a>
+                
     </section>
-    <section id="4">
+    <section id="carro4" class="img" >
     
             <h2>E60</h2>
-            <p>Saiba Mais</p>
-        <div id="carro4">
-                img
-        </div>
+            <a href="#">Saiba mais
+            
+            </a>
     </section>
-    <section id="5">
+    <section id="carro5" class="img" >
     
             <h2>F10</h2>
-            <p>Saiba Mais</p>
-        <div id="carro5">
-                img
-        </div>
+            <a href="#">Saiba mais
+            
+            </a>
     </section>
-    <section id="6">
+    <section id="carro6" class="img" >
     
             <h2>F90</h2>
-            <p>Saiba Mais</p>
-        <div id="carro6">
-                img
-        </div>
+            <a href="#">Saiba mais
+            
+            </a>
     </section>
 
     </main>
+
+    <script>
+        function mudouTamano () {
+            if (window,innerWidth >= 768) {
+                itens.style.display = 'block'
+            } else{
+                itens.style.display = 'none'
+            }
+        }
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
 </body>
 </html>

@@ -9,38 +9,180 @@
 main{
     width: 100%;
     height: 100%;
-    background-color: green;
+    background-color: rgb(255, 255, 255);
 
     display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: space-around;
+
 }
 
 section#carro0{
-    background-image: url(../imagens/stpetersburg-russia-august-18-2024-600nw-2506393589.webp);
-
-    height: 30vh;
-
+    background-image: url(../imagens/bmwhead11.jpg);
+    height: 80vh;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
 
+   
+
+}
+
+menu#itens > ul > li > a{
+    display: block;
+    text-decoration: none;
+    margin: auto;
+    text-align: center;
+    width: 150px;
+    padding: 10px;
+    
+    background-color: rgba(0, 0, 0, 0.363);
+    border-top: solid rgba(160, 160, 160, 0.527);
+    color: rgb(255, 255, 255);
+
+    transform: translate(25vw, -24vh);
+}
+
+menu#itens > ul > li > a:hover{
+    background-color: white;
     color: black;
+    
+}
+
+span#burguer{
+    display: block;
+    color: white;
+    margin: auto;
+    transform: translate(71vw, -25vh);
+}
+
+span#burguer:hover{
+    color: rgb(138, 138, 138);
+}
+
+
+
+section#carro0 > h1{
+    font-size: 3.5em;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    transform: translate(0, 56vh);
+
+}
+
+section#carro0 > img{
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: auto;
+    transform: translate(0, 52vh);
+
+}
+
+
+section.img > h2{
+    display: block;
+    font-size: 2em;
+    text-align: left;
+    margin: 5px;
+}
+
+section.img > a{
+    display: block;
+    margin: auto;
+    width: 90%;
+    padding: 0.4em ;
+    text-align: center;
+
+    font-size: 1.5em;
+    font-weight: 100;
+    color: rgb(0, 0, 0);
+    
+
+    
+    
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+
+   
+    text-decoration: none;
+    transform: translate(0, 60vh);
+}
+
+section.img > a:hover{
+    background-color: rgb(158, 158, 158);
 }
 
 section.img{
     margin-top: 10px;
-    height: 30vh;
-    border: 1cap solid rgb(255, 255, 255)k;
-}
-section#carro1{
-    background-image: url(../imagens/imagem\ bloco.png);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
+    height: 80vh;
+    width: 80vw;
 
+    border-radius: 20px;
+
+}
+
+section#carro1{
+    background-image: url(../imagens/bmwmain3.webp);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: cover;
     color: white;
 
 
 }
+
+section#carro2{
+    background-image: url(../imagens/bmwmain3.webp);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: cover;
+    color: white;
+
+
+}
+
+section#carro3{
+    background-image: url(../imagens/bmwmain3.webp);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: cover;
+    color: white;
+
+
+}
+
+section#carro4{
+    background-image: url(../imagens/bmwmain3.webp);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: cover;
+    color: white;
+
+
+}
+
+section#carro5{
+    background-image: url(../imagens/bmwmain3.webp);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: cover;
+    color: white;
+
+
+}
+
+section#carro6{
+    background-image: url(../imagens/bmwmain3.webp);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: cover;
+    color: white;
+
+
+}
+
 
