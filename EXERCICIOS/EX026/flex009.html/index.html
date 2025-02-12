@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+
+    <style>
+        div.conteiner{
+            background-color: black;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            margin-bottom: 50px;
+            height: 100px;
+        }
+
+        div.conteiner2{
+            background-color: black;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            height: 100px;
+        }
+
+        div.item{
+            background-color: aquamarine;
+            flex-basis: auto;
+            border: 1px solid black;
+        }
+
+        div.item2{
+            background-color: aquamarine;
+            flex-basis: 200px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">CCCCCCCCCC</div>
+    </div>
+
+    <div class="conteiner2">
+        <div class="item2">A</div>
+        <div class="item2">B</div>
+        <div class="item2">CCCCCCCCCCCCCC</div>
+    </div>
+</body>
+</html>
