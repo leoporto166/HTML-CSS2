@@ -126,9 +126,9 @@ section.img{
 }
 
 section#carro1{
-    background-image: url(../imagens/bmwmain3.webp);
+    background-image: url(../imagens/e28-1.1.jpg);
     background-repeat: no-repeat;
-    background-position: bottom center;
+    background-position: left center;
     background-size: cover;
     color: white;
 
@@ -136,9 +136,9 @@ section#carro1{
 }
 
 section#carro2{
-    background-image: url(../imagens/bmwmain3.webp);
+    background-image: url(../imagens/e34-1.jpg);
     background-repeat: no-repeat;
-    background-position: bottom center;
+    background-position: center center;
     background-size: cover;
     color: white;
 
@@ -146,9 +146,9 @@ section#carro2{
 }
 
 section#carro3{
-    background-image: url(../imagens/bmwmain3.webp);
+    background-image: url(../imagens/e39-1.1.jpg);
     background-repeat: no-repeat;
-    background-position: bottom center;
+    background-position: left center;
     background-size: cover;
     color: white;
 
@@ -156,9 +156,9 @@ section#carro3{
 }
 
 section#carro4{
-    background-image: url(../imagens/bmwmain3.webp);
+    background-image: url(../imagens/e60-1.1.jpg);
     background-repeat: no-repeat;
-    background-position: bottom center;
+    background-position: left center;
     background-size: cover;
     color: white;
 
@@ -166,9 +166,9 @@ section#carro4{
 }
 
 section#carro5{
-    background-image: url(../imagens/bmwmain3.webp);
+    background-image: url(../imagens/f10-2.jpg);
     background-repeat: no-repeat;
-    background-position: bottom center;
+    background-position: center center;
     background-size: cover;
     color: white;
 
@@ -176,9 +176,9 @@ section#carro5{
 }
 
 section#carro6{
-    background-image: url(../imagens/bmwmain3.webp);
+    background-image: url(../imagens/f90-5.jpg);
     background-repeat: no-repeat;
-    background-position: bottom center;
+    background-position: center center;
     background-size: cover;
     color: white;
 
