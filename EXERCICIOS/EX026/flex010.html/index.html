@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+
+    <style>
+        div.conteiner{
+            background-color: black;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            margin-top: 50px;
+        }
+
+        div.item{
+            background-color: aquamarine;
+            border: 1px solid black;
+            flex-basis: 250px;
+        }
+
+        div.item1{
+            background-color: aquamarine;
+            border: 1px solid black;
+            flex-basis: 250px;
+            flex-shrink: 0;
+            flex-grow: 1;
+        }
+
+        div.item2{
+            background-color: aquamarine;
+            border: 1px solid black;
+            flex-basis: 250px;
+            flex-grow: 1 ;
+        }
+
+        div.item3{
+            background-color: aquamarine;
+            border: 1px solid black;
+            flex-basis: 250px;
+            flex-shrink: 0;
+        }
+
+        div.item4{
+            background-color: aquamarine;
+            border: 1px solid black;
+            flex-basis: 250px;
+            flex-shrink: 1;
+            flex-grow: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="item">C</div>
+        <div class="item">B</div>
+        <div class="item">A</div>
+    </div>
+
+    <div class="conteiner">
+        <div class="item1">A</div>
+        <div class="item1">B</div>
+        <div class="item"1>C</div>
+    </div>
+
+    <div class="conteiner">
+        <div class="item2">A</div>
+        <div class="item2">B</div>
+        <div class="item2">C</div>
+    </div>
+
+    <div class="conteiner">
+        <div class="item3">A</div>
+        <div class="item3">B</div>
+        <div class="item3">C</div>
+    </div>
+
+    <div class="conteiner">
+        <div class="item4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus totam quos laudantium ipsum modi a possimus adipisci itaque dolor repellendus assumenda quidem quisquam quam sit, accusamus voluptate eius. Itaque, eum?</div>
+        <div class="item4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus blanditiis, vero similique incidunt minus voluptates ipsam nihil autem a sunt provident repellat, laborum velit eius pariatur? Natus officia minus doloribus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores nam ipsa vel natus! Eius veniam nobis quisquam temporibus nisi provident in nesciunt, molestias corporis quae eum reiciendis ullam, sunt impedit.</div>
+        <div class="item4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non consequuntur quos quaerat debitis illo molestiae voluptatum, temporibus, suscipit accusantium quas eum! Nobis quidem velit ullam officiis et voluptas nam aliquam. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo iure repellat facilis dolores. Quibusdam asperiores tempore assumenda obcaecati debitis, eos similique aliquam. Corporis, incidunt corrupti! Iure, saepe. Libero, consectetur nobis?</div>
+    </div>
+</body>
+</html>
