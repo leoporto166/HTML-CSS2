@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 620px) {
+    header{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+    }
+    
+    menu > ul > li{
+        text-decoration: none;
+        display: inline-block;
+    }
+
+    menu{
+        display: flex;
+        justify-content: end;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}

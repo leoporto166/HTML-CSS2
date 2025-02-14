@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+*{
+    padding: 0px;
+    margin: 0px;
+    
+}
+
+header{
+    background-color: green;
+    padding: 10px;
+}
+
+header > h1{
+    text-align: left;
+    font-size: 3em;
+}
+
+menu > ul > li> a{
+    display: block;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 1.2em;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    text-align: center;
+    margin: 10px;
+    height: 30px;
+    padding-top: 5px;
+}
+
+menu > ul > li> a:hover{
+    background-color: rgb(145, 231, 142);
+    transition: 0.5s;
+
+}
+
+main > article{
+    background-color: gray;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+main > article > h2{
+    font-size: 2em;
+    margin: 5px;
+}
+main > article > p{
+    font-size: 1.2em;
+    margin: 5px;
+}
