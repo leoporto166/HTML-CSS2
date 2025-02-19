@@ -32,7 +32,7 @@ section#carro0{
 }
 
 menu#itens > ul > li > a{
-    display: block;
+    display: inline;
     text-decoration: none;
     margin: auto;
     text-align: center;
@@ -42,8 +42,6 @@ menu#itens > ul > li > a{
     background-color: rgba(0, 0, 0, 0.363);
     border-top: solid rgba(160, 160, 160, 0.527);
     color: rgb(255, 255, 255);
-
-    transform: translate(25vw, -24vh);
 }
 
 menu#itens > ul > li > a:hover{
@@ -55,14 +53,12 @@ menu#itens > ul > li > a:hover{
 span#burguer{
     display: block;
     color: white;
-    margin: auto;
-    transform: translate(71vw, -25vh);
+    text-align: left;
 }
 
 span#burguer:hover{
     color: rgb(138, 138, 138);
 }
-
 
 
 section#carro0 > h1{
