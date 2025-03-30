@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <h1>Formularios</h1>
+
+    <form action="">
+        <label for="inome">Primeiro Nome</label>
+
+        <input type="text" id="inome" name="nome" placeholder="Seu primeiro nome" required>
+        <br>
+        <br>
+        <label for="iult">Ultimo nome</label>
+        <input type="text" id="iult" name="ult" placeholder="Ultimo nome" required>
+        <br>
+        <br>
+
+        <!--TIPO RADIO-->
+        <label for="">
+            <strong>Qual seu nível como programador?</strong>
+        </label>
+
+        <br>
+
+        <label for="inivel">Sou iniciante
+            <input type="radio" name="nivel" id="inivel" value="iniciante">
+        </label>
+
+        <label for="inivel">Sou experiente
+            <input type="radio" name="nivel" id="inivel" value="avançado">
+        </label>
+
+        <br>
+        <br>
+
+        <!--TIPO SELECT-->
+
+        <label for="iescol">
+            <strong>Sua Escolaridade</strong>
+        </label>
+        
+        <br>
+
+        <select name="escol" id="iescol" required>
+            <option selected disabled>Selecione</option>
+            <option value="">Formação básica</option>
+            <option value="">Ensino Médio</option>
+            <option value="">Ensino Superior</option>
+        </select>
+
+        <br>
+        <br>
+
+        <!--TIPO CHECKBOX-->
+        <br>
+        <br>
+        <label for="">
+            <strong>Oque você está estudando?</strong>
+        </label>
+        <br>
+
+        <label for="ium">HTML</label>
+        <input type="checkbox" name="um" id="ium" value="HTML">
+
+        <br>
+
+        <label for="idois">CSS</label>
+        <input type="checkbox" name="dois" id="idois" value="CSS">
+
+        <br>
+
+        <label for="itres">JS</label>
+        <input type="checkbox" name="tres" id="itres" value="JS">
+
+        <!--TIPO EMAIL-->
+
+        <br>
+        <br>
+
+        <label for="iemail">Insira seu email</label>
+        <input type="email" name="email" id="iemail">
+
+        <!--TIPO DATE-->
+
+        <br>
+        <br>
+        <label for="idate">Data de nascimento</label>
+        <input type="datetime-local" name="date" id="idate">
+
+        <input type="submit" value="Cadastrar">
+    </form>
+</body>
+</html>
