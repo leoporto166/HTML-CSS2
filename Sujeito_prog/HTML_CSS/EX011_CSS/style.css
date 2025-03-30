@@ -1,10 +1,89 @@
 
-h1.primeiro_h1{
-    /*color: green;*/
-    color:#008000;
-    color: rgba(red, green, blue, alpha);
-    font-size: 30px;
+*{
     font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    height: 180vh;
+}
+
+header{
+    background-color: blue;
+    width: 100%;
+
+    position: sticky;
+    top: 0;
+}
+
+div.container{
+    background-color: black;
+    width: 700px;
+    color: white;
+    /*margin: espaçamento externo*/
+    margin: auto;
+
+    /*padding espaçamento interno*/
+    padding: 80px;
+
+    /*border: borda*/
+    border: 5px solid green;
+}
+
+aside.rede_social > h2{
+    text-align: center;
+
+}
+
+aside.rede_social > ul{
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+aside.rede_social > li{
+    margin: 5px;
+}
+
+aside.rede_social > ul > li > a{
+    text-decoration: none;
+    color: black;
+}
+
+aside.rede_social > ul > li > a:hover{
+    text-decoration: none;
+    color: rgb(4, 158, 25);
+}
+
+/*Positions
+1- Por padrão temos o Static ou seja estatico
+2- Relative elemento é posicionado em relação a sua posição normal. (top, bottom, left, rigth)
+3- Absolute: é posicionado em relação ao seu elemento pai mais próximo que possui position: relative;, se nao tiver nenhum é posicionado em relação ao body
+4-Fixed: vai se tornar fixo na tela
+5- Sticky: muito parecido com o fixed, mas nesse caso o elemento so ficara fixo quando os scroll chegar nele
+*/
+div.area{
+    position: relative;
+    border: 5px solid green;
+    width: 500px;
+    height: 300px;
+    left: 10px;
+}
+
+div.area > div.area_absolute{
+    position: absolute;
+    border: 5px solid black;
+    bottom: 0px;
+    right: 0px;
+
+}
+
+div.area_fixed{
+    position: fixed;
+    background-color: green;
+    bottom: 0;
+    right: 50vw;
+
 }
 
 h1#segundo_h1{
