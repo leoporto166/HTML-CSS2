@@ -8,12 +8,17 @@ div.container{
     margin: 50px;
     /*Ativando Flexbox no container*/
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    align-items: flex-end;
 }
 
 div.area{
     width: 100px;
     height: 100px;
+    font-size: 2em;
+    color: white;
+
+
 }
 
 div.item_1{
