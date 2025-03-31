@@ -1,0 +1,29 @@
+body{
+    font-family:'Roboto', sans-serif;
+}
+
+div.container{
+    background-color: #008000;
+    height: 500px;
+    margin: 50px;
+    /*Ativando Flexbox no container*/
+    display: flex;
+    flex-direction: column;
+}
+
+div.area{
+    width: 100px;
+    height: 100px;
+}
+
+div.item_1{
+    background-color: rgb(0, 0, 0);
+}
+
+div.item_2{
+    background-color: blue;
+}
+
+div.item_3{
+    background-color: aqua;
+}
