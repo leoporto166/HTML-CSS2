@@ -1,0 +1,207 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+}
+/*INICIO CADASTRO*/
+
+.cadast{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.form{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza os itens horizontalmente */
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.267);
+    width: 35%;
+    height: 58%;
+}
+
+.form .grand{
+    margin-bottom: -20px;
+    font-size: 18px;
+}
+
+.form p{
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.form h1{
+    margin-top: 10px;
+    font-family: 'Parisienne', cursive;
+    font-size: 30px;
+
+}
+
+.inp{
+    margin: -5px 0px;
+    width: 280px;
+    height: 35px;
+    padding-left: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.267);
+}
+
+.but{
+    margin-top: 30px;
+    width: 280px;
+    height: 35px;
+    background-color: rgb(67, 101, 255);
+    border: 0;
+    color: white;
+    cursor: pointer;
+}
+
+/*FIM CADASTRO*/
+/*INICIO CONECTE-SE*/
+
+.conect{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -30%;
+}
+
+.conect a{
+    text-decoration: none;
+    color:rgb(67, 101, 255);
+}
+
+.conect p{
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.267);
+    padding: 2%;
+    width: 35%;
+    text-align: center;
+}
+
+/*FIM CONECT-SE*/
+
+h3{
+    text-align: center;
+    margin: 3%;
+}
+
+.logo{
+    display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+
+}
+
+.logo img{
+    width: 40%;
+}
+
+/*FIM LOGO*/
+
+/*INICIO FOOTER*/
+footer{
+    bottom: 0;
+    position: fixed;
+    margin-bottom: 20px;
+    font-weight: bolder;
+}
+/*FIM FOOTER*/
+
+@media(max-width:880px){
+    .form{
+        width: 40%;
+        height: 58%;
+
+    }
+
+    .conect p{
+        padding: 2%;
+        width: 35%;
+    }
+
+}
+
+@media(max-width:740px){
+    .form{
+        width: 45%;
+        height: 58%;
+
+    }
+
+    .conect p{
+        padding: 2%;
+        width: 35%;
+    }
+
+}
+
+@media(max-width:660px){
+    .form{
+        width: 55%;
+        height: 58%;
+
+    }
+
+    .conect p{
+        padding: 2%;
+        width: 40%;
+    }
+
+}
+
+@media(max-width:570px){
+    .form{
+        width: 60%;
+        height: 58%;
+
+    }
+
+    .conect p{
+        padding: 2%;
+        width: 45%;
+    }
+
+}
+
+@media(max-width:500px){
+    .form{
+        width: 72%;
+        height: 58%;
+
+    }
+
+    .conect p{
+        padding: 2%;
+        width: 55%;
+    }
+
+}
+
+@media(max-width:414px){
+    .form{
+        width: 80%;
+        height: 70%;
+
+    }
+
+    .conect p{
+        padding: 2%;
+        width: 65%;
+    }
+
+}
+
