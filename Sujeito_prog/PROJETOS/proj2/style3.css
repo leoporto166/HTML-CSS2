@@ -1,7 +1,7 @@
 *{
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 a{
@@ -18,16 +18,16 @@ body{
     line-height: 18px;
 }
 
-#englob{
+#englobar{
     height: 100vh;
 }
 
 #conteiner{
-    margin: 0 auto;
-    min-height: 100%;
-    width: 800px;
     display: flex;
     align-items: center;
+    margin: 0 auto;
+    width: 800px;
+    min-height: 100%;
 }
 
 .coluna{
@@ -37,19 +37,10 @@ body{
 
 .esquerda{
     background-image: url(insta/img/main-foto.png);
-    background-size: 450px;
+    height: 600px;
     background-repeat: no-repeat;
     background-position: center;
-    height: 600px;
-}
-
-.login{
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid #e6e6e6;
+    background-size: 450px;
 
 }
 
@@ -58,8 +49,17 @@ body{
     height: 60px;
 }
 
+.login{
+    border: 1px solid #e6e6e6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
 input[type="text"], input[type="password"]{
-    margin: 5px;
+    margin: 10px;
     height: 40px;
     padding: 10px;
     border-radius: 4px;
@@ -70,17 +70,18 @@ input[type="text"], input[type="password"]{
 }
 
 input[type="text"]::placeholder, input[type="password"]::placeholder{
-   color: rgb(165, 164, 164);
+    color: rgb(165, 164, 164);
+    
 }
 
 input[type="text"]::focus, input[type="password"]::focus{
     outline: 0;
     border: 1px solid #a1a1a1;
- }
-
+    
+}
 
 input[type="submit"]{
-    margin: 10px;
+    margin:10px;
     height: 30px;
     width: 320px; 
     background-color: #3c96ed;
@@ -91,34 +92,22 @@ input[type="submit"]{
 }
 
 .info{
-    background-color: #FFF;
-    height: 60px;
-    border: 1px solid rgb(236, 234, 234);
-    margin: 10px auto 0;
     display: flex;
-    justify-content: center;
     align-items: center;
-}
-
-.info p a{
-    font-weight: bolder;
-    user-select: none;
-}
-
-.painel_app{
+    justify-content: center;
     margin-top: 20px;
+    border: 1px solid rgb(236, 234, 234);
+    background-color: #FFFFFF;
+    height: 50px;
+}
+.app_env{
     text-align: center;
-
-}
-
-.app{
     margin-top: 20px;
-
 }
 
 .app img{
     height: 40px;
-    padding: 0 2px;
+    margin-top: 15px;
 }
 
 footer{
@@ -127,18 +116,20 @@ footer{
     margin-bottom: 50px;
 }
 
+
 .footer_um a{
-    color: black;
-    text-transform: uppercase;
-    font-weight: bold;
-    margin-right: 8px;
+   margin-right: 8px;
+   font-weight: bold;
+   color: black;
+   font-size: 18px;
+   text-transform: uppercase;
 }
 
 .txt_peq{
-    font-size: 12px;
-    font-weight: bold;
+    display: inline-block;
+    font-size: 16px;
     color: gray;
+    font-weight: bold;
     text-transform: uppercase;
     padding-left: 20px;
-    display: inline-block;
 }
