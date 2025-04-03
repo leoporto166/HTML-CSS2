@@ -17,3 +17,73 @@ body{
     font-size: 14px;
     line-height: 18px;
 }
+
+#englob{
+    height: 100vh;
+}
+
+#conteiner{
+    margin: 0 auto;
+    min-height: 100%;
+    width: 800px;
+    display: flex;
+    align-items: center;
+}
+
+.coluna{
+    flex-grow: 1;
+    width: 50%;
+}
+
+.esquerda{
+    background-image: url(insta/img/main-foto.png);
+    background-size: 450px;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 600px;
+}
+
+.login{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #e6e6e6;
+
+}
+
+.logo img{
+    width: 250px;
+    height: 60px;
+}
+
+input[type="text"], input[type="password"]{
+    margin: 5px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 4px;
+    border: rgb(236, 234, 234);
+    background-color: #FFFFFF;
+    font-size: 13px;
+    width: 320px;
+}
+
+input[type="text"]::placeholder, input[type="password"]::placeholder{
+   color: rgb(165, 164, 164);
+}
+
+input[type="text"]::focus, input[type="password"]::focus{
+    outline: 0;
+    border: 1px solid #a1a1a1;
+ }
+
+
+.but{
+    margin: 10px;
+    height: 30px;
+    width: 300px; 
+    background-color: #3c96ed;
+    color: white;
+    border: 0;
+}
