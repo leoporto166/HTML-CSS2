@@ -133,3 +133,59 @@ footer{
     text-transform: uppercase;
     padding-left: 20px;
 }
+
+/*RESPONSIVIDADE*/
+
+@media (max-width:840px) {
+    .esquerda{
+        display: none;
+    }
+
+    #conteiner{
+        width: 70%;
+    }
+
+    .diretia{
+        padding-left: 0;
+    }
+
+    
+}
+
+@media (max-width:500px) {
+    .esquerda{
+        display: none;
+    }
+
+    #conteiner{
+        width: 80%;
+    }
+
+    .diretia{
+        padding-left: 0;
+    }
+
+    input[type="text"],  input[type="password"],  input[type="submit"]{
+        width: 300px;
+    }
+
+    
+}
+
+@media (max-width:400px) {
+    .esquerda{
+        display: none;
+    }
+
+    #conteiner{
+        width: 90%;
+    }
+
+    .diretia{
+        padding-left: 0;
+    }
+
+    
+
+    
+}
