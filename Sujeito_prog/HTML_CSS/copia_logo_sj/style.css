@@ -1,0 +1,255 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+a{
+    color: white;
+}
+a:hover{
+    color: #4164e0;
+    text-decoration: none;
+}
+
+.englob {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+.colunaum{
+    width: 30%;
+    height: 100vh;
+    background-color: #191C1F;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    border-right: 0.5px solid rgb(134, 134, 134);
+    justify-content: space-between;
+    
+}
+
+.importante{
+    margin-top: 100px;
+    padding: 40px 50px ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    border-right: 0.5px solid;
+    background-color:#191C1F ;
+    
+}
+
+
+.t1{
+    margin-bottom: 50px;
+    width: 100%;
+}
+
+.t1 h3{
+    color: white;
+    text-align: center;
+    font-weight: 300;
+    font-size: 18px;
+    margin: 10px 0px;
+}
+
+
+.login label{
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: -20px;
+    display: block;
+    color: white;
+
+}
+
+.login{
+    width: 100%;
+
+}
+
+.login form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.login p{
+    text-align: end;
+    color: white;
+    margin: 10px 0;
+}
+
+.login a{
+    text-decoration: none;
+}
+
+.login p:hover{
+    color: #4164e0;
+    
+}
+
+
+.info{
+    color: white;
+
+}
+
+.info h1{
+    font-size: 30px;
+}
+
+
+.login_social{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login_social img{
+    width: 40px;
+    height: 40px;
+}
+
+.imagem{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    border: 1px solid white;
+    margin: 15px 0px;
+    border-radius: 5px;
+    transition: background-color 1s;
+}
+
+.imagem:hover{
+    background-color: #ffffff;
+}
+
+
+
+.line{
+    background-color: white;
+    height: 1px;
+    width: 100%;
+}
+
+input[type="text"], input[type="password"]{
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: black;
+    border: 0;
+    color: white;
+}
+
+input[type="text"]::placeholder, input[type="password"]::placeholder{
+    color: white;
+}
+
+
+input[type="submit"]{
+    width: 100%;
+    height: 45px;
+    border-radius: 5px;
+    font-size: 20px;
+    margin-top: 30px;
+    background-color: #00FF3B;
+    border: 0;
+    cursor: pointer;
+    transition: background-color 0.5s;
+    font-weight: 600;
+
+}
+
+
+input[type="submit"]:hover{
+    background-color: #1a6b2d;
+
+}
+
+.criar{
+    margin: 20px 0px;
+    font-size: 18px;
+    color: white;
+    width: 100%;
+}
+
+.criar p{
+    text-align: center;
+}
+
+
+
+
+.colunadois {
+    width: 70%;
+    height: 100vh;
+    background-image: linear-gradient(to right, black, rgba(0, 0, 0, 0.171)), url(img/telapc.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/*Cadastro*/
+
+.login .cas{
+    text-align: start;
+    font-size:13px ;
+}
+
+.login .cas:hover{
+    color: white;
+}
+
+
+
+@media (max-width:1200px){
+    .colunaum{
+        width: 40%;
+    }
+
+    .colunadois{
+        width: 60%;
+    }
+}
+
+@media (max-width:950px){
+    .colunaum{
+        width: 50%;
+    }
+
+    .colunadois{
+        width: 50%;
+    }
+}
+
+@media (max-width:750px){
+    .colunaum{
+        width: 100%;
+        height: 100%;
+    }
+
+    .colunadois{
+        display: none;
+    }
+}
+
