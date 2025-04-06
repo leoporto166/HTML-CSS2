@@ -4,9 +4,18 @@
     box-sizing: border-box;
 }
 
-body{
+html, body {
+    overflow-x: hidden;
+}
+
+
+
+html, body {
+    margin: 0;
+    padding: 0;
     width: 100%;
-    height: 100%;
+    height: 100vh;
+    overflow-x: hidden;
     font-family: "Nunito Sans", sans-serif;
 }
 
@@ -21,7 +30,7 @@ a:hover{
 .englob {
     display: flex;
     width: 100%;
-    height: 100vh;
+    height: 100%;
 }
 
 .colunaum{
@@ -197,16 +206,14 @@ input[type="submit"]:hover{
     text-align: center;
 }
 
-
-
-
 .colunadois {
     width: 70%;
-    height: 100vh;
+    height: 102.2vh;
     background-image: linear-gradient(to right, black, rgba(0, 0, 0, 0.171)), url(img/telapc.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+
 }
 
 /*Cadastro*/
