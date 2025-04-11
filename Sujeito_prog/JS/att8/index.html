@@ -6,7 +6,25 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <h1>CALCULADORA IMC</h1>
+    <form onsubmit="return calcular(event)">
+        <label for="ipeso">Digite seu peso</label>
+        <br>
+        <input type="text" name="peso" id="ipeso"
+        placeholder="Exemplo: 65">
+        <br>
+        <br>
+        <label for="ialtura">Digite sua altura</label>
+        <br>
+        <input type="text" name="altura" id="ialtura" placeholder="Exemolo: 1.70">
+        <br>
+        <br>
+        <input type="submit" value="Enviar">
+    </form>
+
+    <div id="result">
+        
+    </div>
 
     <script src="script.js"></script>
 </body>
