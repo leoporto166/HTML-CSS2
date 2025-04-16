@@ -44,7 +44,7 @@ function addTarefas(){
         inputElement.value = "";
 
         renderTarefas();
-        salvarTarefas();
+        salvarTarefas(); 
     }
 }
 
