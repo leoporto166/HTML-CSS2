@@ -37,11 +37,11 @@ console.log("------------------------------------")
 
 let numbers = [2, 7, 10, 12, 31, 80];
 
-function primo(n) {
-    if (n <= 1) return false;
+function primo(numeros) {
+    if (numeros <= 1) return false;
 
-    for (let i = 2; i < n; i++) {
-        if (n % i === 0) {
+    for (let i = 2; i < numeros; i++) {
+        if (numeros % i === 0) {
             return false;
         }
     }
@@ -51,7 +51,7 @@ function primo(n) {
 
 // Agora percorre o array e mostra os primos
 function primos(numbers) {
-    numbers.forEach((num) => {
+    numbers.map((num) => {
         if (primo(num)) {
             console.log(`${num} é primo`);
         }
