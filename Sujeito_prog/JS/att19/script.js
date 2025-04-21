@@ -53,14 +53,23 @@ let livros = [
         titulo: "Dom Casmurro",
         autor: "Machado de Assis",
         ano: 1899
-    }
+    },
+    {
+        titulo: "Livro 4",
+        autor: "Leonardo",
+        ano: 2020
+    },
 ]
 
 let filtro = livros.filter((item) => {
-    return item.ano >= 2010
+    if(item.ano >= 2010){
+        console.log(item); // se quiser ver os que passaram
+        return true;       // diz que esse item deve ir pro array filtrado
+    }
+    return false;          // opcional, mas bom deixar explícito
 });
 
-console.log(filtro)
+console.log(filtro);
 
 
 
