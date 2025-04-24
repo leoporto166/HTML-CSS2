@@ -1,30 +1,26 @@
-//FUNCAO ANONIMA
+//Incluides, startswith, endswith
 
-/*
- () => {}
- 
- 1- Os parenteses, que é por onde a função recebe os asrgumentos
- 2- "seta" => - responsavel pelo nome "arrow"
- 3- E as chaves: o bloco de codigo que representa o corpo da função
 
-*/
+//Incluides
+let nomes = ["Leonardo", "Pig", "Kaua"]
 
-function somar(a, b){
-    let total = a + b;
-    return console.log(total);
+console.log(nomes.includes("Leonardo"));
+console.log(nomes.includes("Igor"))
+
+if(nomes.includes("Leonardo")){
+    console.log("Esta na lista")
+}
+else{
+    console.log("Não esta na lista")
 }
 
-somar(3, 30);
+//startswits
 
-let subtrair = (valor1, valor2) => {
-    let total = valor1 - valor2
-    console.log(total)
-}
+let nome = "Leonardo"
 
-subtrair(63, 30)
+console.log(nome.startsWith("Leo"));
 
-let numeros = [1, 2, 3];
+//endsWith
 
-numeros.map((item) => {
-    console.log(item)
-})
+console.log(nome.endsWith("rdo"));
+
