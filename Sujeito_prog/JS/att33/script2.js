@@ -15,7 +15,7 @@ function nutriApp(){
             let liElement = document.createElement("li");
             let titleElement = document.createElement("strong");
             let imgElement = document.createElement("img");
-            let descriptionElemnent = document.createElement("a");
+            let descriptionElemnent = document.createElement("p");
 
             let titleText = document.createTextNode(item.titulo);
             titleElement.appendChild(titleText);
