@@ -26,7 +26,7 @@ function pegarValor(valor){
 function gerarNome(quantidade){
     let gerar = [];
 
-    while(gerar.length < 4){
+    while(gerar.length < quantidade){
         let aleatorio = Math.floor(Math.random() * 10000); 
         let numeroFormatado = aleatorio.toString().padStart(4, "0");
         let nomeUsuario = "user" + numeroFormatado;
