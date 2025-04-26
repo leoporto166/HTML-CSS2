@@ -11,42 +11,43 @@
   E ao final deverá retornar uma lista com os números gerados.  
 */
 
-function gerarValor(quantidade) {
-  // inicializa um array vazio para guardar os números gerados
-  let gerar = [];
+// pede ao usuário um número de 6 a 9 e converte a resposta para número
+let valor = Number(prompt("Digite um valor de 6 a 9"));
 
-  // enquanto não tivermos a quantidade desejada de números...
+// função principal que valida o valor e gera os números
+function pegarValor(valor) {
+  // verifica se o valor está fora do intervalo permitido
+  if (valor < 6 || valor > 9) {
+    alert("DIGITE UM VALOR ENTRE 6 E 9");
+    return []; // interrompe a execução se o valor for inválido
+  }
+
+  // gera os números se o valor for válido
+  let resultado = gerarValor(valor);
+
+  // exibe os números gerados, separados por vírgula
+  alert(`Números gerados: ${resultado.join(", ")}`);
+}
+
+// função que gera números aleatórios sem repetição
+function gerarValor(quantidade) {
+  let gerar = []; // array para armazenar os números gerados
+
+  // enquanto o array não atingir a quantidade desejada
   while (gerar.length < quantidade) {
-    // gera um número inteiro aleatório entre 1 e 60
+    // gera um número aleatório entre 1 e 60
     let aleatorio = Math.floor(Math.random() * 60) + 1;
 
-    // só adiciona se ainda não existir no array (evita repetição)
+    // adiciona o número apenas se ainda não existir no array
     if (!gerar.includes(aleatorio)) {
       gerar.push(aleatorio);
     }
   }
 
-  // quando o array estiver completo, retorna-o
+  // retorna o array final com os números gerados
   return gerar;
 }
 
-// pede ao usuário um número de 6 a 9 e converte a resposta para número
-let valor = Number(prompt("Digite um valor de 6 a 9"));
-
-function pegarValor(valor) {
-  // verifica se o valor está fora do intervalo permitido
-  if (valor < 6 || valor > 9) {
-    alert("DIGITE UM VALOR ENTRE 6 E 9");
-    return; // interrompe a execução se inválido
-  }
-
-  // se chegou aqui, o valor é válido: gera os números
-  let resultado = gerarValor(valor);
-
-  // mostra no alerta a lista final, unindo os números por vírgula
-  alert(`Números gerados: ${resultado.join(", ")}`);
-}
-
-// chama a função principal para iniciar o processo
+// inicia o processo chamando a função principal
 pegarValor(valor);
 
