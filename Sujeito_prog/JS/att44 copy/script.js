@@ -1,35 +1,38 @@
 /*
-  Crie uma função que receba um número entre 3 e 5.
-  Se o número for menor que 3 ou maior que 5, deve retornar um array vazio
-  e mostrar no console: "Número inválido!".
+  Crie uma função que receba como argumento um número entre 2 e 4.
+  Se o número for inválido, retorne um array vazio e exiba no console:
+  "Informe um número de 2 a 4.".
 
-  Se o número for válido, a função deve gerar uma lista de letras aleatórias.
-  As letras devem ser sorteadas entre 'A' até 'Z' (maiúsculas).
-  As letras sorteadas **não podem se repetir**.
+  Se o número for válido, gere nomes de usuários aleatórios.
+  Cada nome deve ser no formato: "user" seguido de 4 dígitos aleatórios (por exemplo: user4837).
+  Não deve haver repetição de usuários.
 
-  No final, a função deve retornar o array com as letras sorteadas.
+  Retorne o array com todos os usuários gerados.
 */
 
-let qnt = Number(prompt("Digite um número de 3 a 5"));
+let valor = Number(prompt("Digite um número de 2 a 4"));
 
-function verificarQuantidade(qnt){
-    if(qnt < 3 || qnt > 5){
-        alert("NÚMERO INVALIDO")
+function pegarValor(valor){
+    if(valor < 2 || valor > 4){
+        alert("Informe um número de 2 a 4");
         return [];
     }
 
-    let resp = gerarLetras(qnt)
-    alert(`Seu resultado foi: ${resp.join(", ")}`)
+    let usuarios = gerarNome(valor)
+    alert(`Essas são as opções de nomes que criamos ${usuarios. join(", ")}`)
 
 }
 
-function gerarLetras(quantidade){
-    let gerar =[]
-    while(gerar.length < quantidade){
-        let letras = String.fromCharCode(Math.floor(Math.random() * 26) + 65); 
+function gerarNome(quantidade){
+    let gerar = [];
 
-        if(!gerar.includes(letras)){
-            gerar.push(letras)
+    while(gerar.length < 4){
+        let aleatorio = Math.floor(Math.random() * 10000); 
+        let numeroFormatado = aleatorio.toString().padStart(4, "0");
+        let nomeUsuario = "user" + numeroFormatado;
+
+        if(!gerar.includes(nomeUsuario)){
+        gerar.push(nomeUsuario);
         }
     }
 
@@ -37,4 +40,4 @@ function gerarLetras(quantidade){
 
 }
 
-verificarQuantidade(qnt)
+pegarValor(valor)
